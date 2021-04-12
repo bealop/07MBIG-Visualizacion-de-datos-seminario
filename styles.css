@@ -43,3 +43,15 @@ p {
 .chart > .tableauPlaceholder {
   width: 100% !important;
 }
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  border-style: solid;
+}
+
+ul {
+  list-style-type: circle;
+}
