@@ -16,25 +16,47 @@
 
     <div class='author'>
       <span>Beatriz López Barranco</span>
-      <a href "https://web-platform-8skahe.stackblitz.io/">Seminario</a> |
-      <a href "https://github.com/bealop/07MBIG-Visualizacion-de-datos-seminario">Github Repo</a>
+      <a href="https://web-platform-8skahe.stackblitz.io/">Seminario</a> |
+      <a href="https://github.com/bealop/07MBIG-Visualizacion-de-datos-seminario">Github Repo</a>
     </div>
 
-    <img src = 'https://ichef.bbci.co.uk/news/800/cpsprodpb/C2BA/production/_114805894_gettyimages-1263990592.jpg'>
+    <img class = 'bordered' src = 'https://ichef.bbci.co.uk/news/800/cpsprodpb/C2BA/production/_114805894_gettyimages-1263990592.jpg'>
     </img>
 
     <h2> - Introducción- </h2>
     <p>
-      En marzo 2020 la OMS declaró pandemia mundial tras la masiva infección de la población causada por el COVID-19. Este virus, también denominado SARS-CoV-2, puede transmitirse de persona a persona por diferentes vías (contacto o inhalación de gotas y aerosoles) o por contancto indirecto (manos u objetos contaminados).
-      <br>
+      En marzo 2020 la OMS declaró pandemia mundial tras la masiva infección de la población causada por el COVID-19.
+      Este virus, también denominado SARS-CoV-2, puede transmitirse de persona a persona por diferentes vías (contacto o
+      inhalación de gotas y aerosoles) o por contancto indirecto (manos u objetos contaminados).
+    </p>
+    <p>
+      Con el fin de combatir al virus, se empezaron a desarrollar diferentes vacunas a nivel mundial (Etapa 0). En
+      Diciembre-2020 se dió comienzo a la Etapa 1 en España, ya que comenzó a recibir las primeras dosis y a
+      administrarlas a los grupos prioritarios, completando esta fase en Febrero-2021. Actualmente nos encontramos en la
+      segunda etapa donde se está vacunando a personas mayores de 46 años en general, personas con condiciones de muy
+      alto riesgo, personal sanitario y sociosanitario y trabajadores con una función social esencial. Se estima que
+      esta etapa finalice en Junio-2021 para dar lugar a la Etapa 3, la cual está pendiente de determinar.
+    </p>
+    <img src = 'https://raw.githubusercontent.com/bealop/07MBIG-Visualizacion-de-datos-seminario/master/Picture%201.png'>
+    </img>
 
-      Actualmente
-      <br>
-      
-      Los gráficos que se exponen a continuación están datados a fecha de 09/04/2021.
+    <p>
+      A continuación se van a mostrar varios gráficos para explicar y conocer con profundidad la actualidad de la
+      vacunación contra el COVID en España así como la expetativa a largo plazo. Todos los datos que han sido utilizados
+      para la elaboración de los gráficos están datados a fecha de 09/04/2021.
     </p>
     <h2> - Evolución del COVID y la vacunación en España - </h2>
-
+    <p>
+      En primer lugar, se ha querido plasmar la evolución de casos COVID frente a la cantidad de dosis administradas a
+      la población. Para ello se ha utilizado un <b>gráfico de áreas</b> que abarca los datos desde el comienzo de la
+      pandemia hasta la actualidad. Por un lado vemos como el número de casos acumulados tienen tres pendientes más
+      pronunciadas que corresponden con las <a
+        href="https://elpais.com/sociedad/2021-03-10/los-datos-de-una-pandemia-en-tres-olas.html">tres olas atravesadas
+        hasta ahora</a>. Por otro lado, podemos ver como, en dos meses y medio, se han administrado casi el mismo número
+      de dosis que casos notificados en más de un año.
+      Con el objetivo de simplificar el gráfico, se ha eliminado el 'eje x' y se ha incluido una descripción de los
+      puntos al pasar por encima de cada una de las áreas.
+    </p>
     <div class='chart'>
       <iframe width="960" height="595" seamless frameborder="0" scrolling="no"
         src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSM4GoN_IbOys7iV7OEtc_Hct76wNc5dWxc-Xt9XCtJ1DixVVcILwgDysXlJRysOWl-_amKTh7aotjy/pubchart?oid=1296279429&amp;format=interactive"></iframe>
@@ -42,46 +64,105 @@
 
 
     <h2> - Vacunas: Tipos y Dosis - </h2>
+    <p>
+      Una vez realizada esta primera exploración, se ha decidido plasmar los diferentes tipos de vacunas así como las
+      dosis de cada una de ellas y las totales. Para ello, se ha elaborado un dashboard que contiene las siguientes
+      partes:
+    <ul>
+      <li> <b>Mapa</b>: el mapa de España representa en tonalidades de rojo - verde el porcentaje de dosis que han sido
+        administradas a la población con respecto al total de recibidas. Asimismo, este mapa puede ser utilizado como
+        filtro para el resto de gráficos presentes en el dashboard. </li>
+      <li> <b>Tabla</b>: en la parte superior derecha se ve un resumen del total de personas vacunadas completamente, el
+        total de dosis administradas y el total de dosis recibidas. Estos datos por defecto son los totales, pero se
+        puede ir seleccionando por una o varias comunidades autónomas si son seleccionadas en el mapa. </li>
+      <li> <b>Gráfico de barras</b>: en orden descendente, se plasma la cantidad de dosis recibidad de cada tipo de
+        vacuna. Asimismo, podemos ver el valor medio. Todos estos datos pueden filtrarse de nuevo haciendo uso del mapa.
+      </li>
+    </ul>
+    </p>
 
     <div class='chart'>
-      <div class='tableauPlaceholder' id='viz1618088697478' style='position: relative'><noscript><a
-            href='#'><img alt='Vacunación COVID ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Se&#47;Seminario-BeatrizLopezBarranco&#47;VacunacinCOVID&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='Seminario-BeatrizLopezBarranco&#47;VacunacinCOVID' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Se&#47;Seminario-BeatrizLopezBarranco&#47;VacunacinCOVID&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en' /><param name='filter' value='publish=yes' /></object>
-      </div>
-      <script type='text/javascript'>
-        var divElement = document.getElementById('viz1618088697478');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} else { vizElement.style.width='100%';vizElement.style.height='977px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                
-      </script>
+    <div class='tableauPlaceholder' id='viz1618343073204' style='position: relative'><noscript><a href='#'><img alt='Vacunación COVID ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Se&#47;Seminario-BeatrizLopezBarranco&#47;VacunacinCOVID&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='Seminario-BeatrizLopezBarranco&#47;VacunacinCOVID' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Se&#47;Seminario-BeatrizLopezBarranco&#47;VacunacinCOVID&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1618343073204');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} else { vizElement.style.width='100%';vizElement.style.height='977px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
     </div>
 
-
-
     <h2> - Vacunación por rangos de edad - </h2>
+    <p>
+      Al comienzo del presente informe se han nombrado las etapas del periodo de vacunación. Es por ello que es muy
+      interesante conocer la distribución de las dosis por rangos de edad, ya que en la fase actual, debería reflejar un
+      numero mayor de dosis según la edad. Para ello se hacen dos representaciones: en valores absolutos de dosis
+      administradas y en medida relativa de ésta frente al total de personas según el INE.
+    </p>
+
     <h3> Personas vacunadas en valores absolutos </h3>
+    <p>
+      Se ha decidido representar en un <b>gráfico de burbujas</b> las dosis en valores absolutos. Este gráfico tiene dos
+      propiedades principales, el tamaño y el color. En este caso, el tamaño representa el nº dosis administradas y el
+      color el nº personas que han recibido la pauta de vacunación completa. De esto se obtienen varias conclusiones
+      (teniendo en cuenta todos los datos de España):
+    <ol>
+      <li> El grupo de 25 - 49 ha recibido un mayor número de dosis que rangos de edad comprendidos entre 50 y 79. Esto
+        se debe a que gran parte de los grupos prioritarios de la Etapa 1 se encuentran en esta franja además de que
+        abarca un rango de edades mayor al resto. </li>
+      <li> El total de personas con vacunación completa va en concordancia con el total de dosis administradas a
+        excepción del rango 50 - 59, donde la pauta completa es ligeramente superior a lo esperado según la evolución
+        del resto. </li>
+      <li> El rango de 70 - 79 sorprende que tenga menos dosis administradas que los rangos de 50 a 69. </li>
+    </ol>
+    Para mayor claridad, se ha añadido una <b>tabla</b> que contiene toda esta información, de manera que es más fácil
+    comparar los valores representados en el gráfico anterior.
+    Finalmente se ha añadido un filtro por CCAA para jugar con los datos y ver como varían según la zona.
+    </p>
+
     <div class='chart'>
-      <div class='tableauPlaceholder' id='viz1618249098279' style='position: relative'><noscript><a href='#'><img alt='Dashboard 1 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Se&#47;Seminario-BeatrizLopezBarranco-2&#47;Dashboard1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='Seminario-BeatrizLopezBarranco-2&#47;Dashboard1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Se&#47;Seminario-BeatrizLopezBarranco-2&#47;Dashboard1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1618249098279');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} else { vizElement.style.width='100%';vizElement.style.height='727px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+    <div class='tableauPlaceholder' id='viz1618343372924' style='position: relative'><noscript><a href='#'><img alt='Dashboard 1 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Se&#47;Seminario-BeatrizLopezBarranco-2-T&#47;Dashboard1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='Seminario-BeatrizLopezBarranco-2-T&#47;Dashboard1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Se&#47;Seminario-BeatrizLopezBarranco-2-T&#47;Dashboard1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1618343372924');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} else { vizElement.style.width='100%';vizElement.style.height='727px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
     </div>
 
     <h3> % Personas vacunadas </h3>
+    <p>
+      Con el fin de corroborar las conclusiones obtenidas del gráfico anterior, se ha utilizado un
+      <b>gráfico de barras horizontales</b> para mostrar los valores relativos del número de dosis frente al total de
+      personas por rango de edad. Por un lado las barras representan el % dosis administradas/total personas. Por otro
+      lado, las líneas negras muestran de ese porcentaje, cual representa al total de pauta completa. Siguiendo el mismo
+      orden explicado anteriormente, se concluye:
+    <ol>
+      <li> Al relativizar los datos, el grupo de 25 - 49 se adapta a lo esperado, por lo que se debía al total de personas que se encontraban en ese rango de edad. </li>
+      <li> Se mantiene lo concluido anteriormente en cuanto a la concordancia entre pauta completa y total de dosis administradas. </li>
+      <li> El rango de 70 - 79 también se mantiene por debajo de los dos previos como se ha comentado anteriormente. </li>
+    </ol>
+    </p>
     <div class='chart'>
-      <div class='tableauPlaceholder' id='viz1618249457150' style='position: relative'><noscript><a href='#'><img alt='% Vacunación por rango de edad ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Se&#47;Seminario-BeatrizLopezBarranco-2-T&#47;Vacunacinporrangodeedad&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='Seminario-BeatrizLopezBarranco-2-T&#47;Vacunacinporrangodeedad' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Se&#47;Seminario-BeatrizLopezBarranco-2-T&#47;Vacunacinporrangodeedad&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1618249457150');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+    <div class='tableauPlaceholder' id='viz1618343758833' style='position: relative'><noscript><a href='#'><img alt='% Vacunación por rango de edad ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Se&#47;Seminario-BeatrizLopezBarranco-2-T1&#47;Vacunacinporrangodeedad&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='Seminario-BeatrizLopezBarranco-2-T1&#47;Vacunacinporrangodeedad' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Se&#47;Seminario-BeatrizLopezBarranco-2-T1&#47;Vacunacinporrangodeedad&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1618343758833');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
     </div>
 
     <h2> - Población vacunada en España - </h2>
+    <p> 
+      Finalmente la pregunta es ¿cuál es la expectativa de vacunación? Para ello se ha plasmado la información en un <b>gráfico de líneas</b>. En marrón vemos la evolución real del porcentaje de población española que está vacunada (pauta completa), alcanzando un 6.01% actualmente. Se prevee una subida en los próximos meses llegando hasta casi un 70% a finales de agosto, tal y como se ve con un trazado verde discontinuo sobre la gráfica. 
+    </p>
+
     <div class='chart'>
       <iframe width="960" height="593" seamless frameborder="0" scrolling="no"
         src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQNzQ5P2arKpRek8ng1n4xuXa-ZU_GU9I3Y3QnC2Q1YApd_2Vof79iMnMXE-USOJ4pNrkw_10tIDx01/pubchart?oid=1161094700&amp;format=interactive"></iframe>
     </div>
     <h2> - Gráficos empleados - </h2>
+    <p>
+      A continuación se enumeran los gráficos empleados a lo largo del presente informe según orden de aparición.
+    </p>
     <ul>
+      <li> SmartArt Process: </li>
+      <li> Gráfico de áreas: </li>
       <li> Mapa: </li>
       <li> Gráfico de barras: </li>
-      <li> Gráfico de barras horizontales: </li>
       <li> Tabla: </li>
-      <li> Gráfico de áreas: </li>
       <li> Gráfico de burbujas agrupadas: </li>
+      <li> Gráfico de barras horizontales: </li>
       <li> Gráfico de líneas: </li>
     </ul>
     <h2> - Plataformas empleadas - </h2>
+    <p>
+      Los gráficos, han sido elaborados en las siguientes plataformas:
+    </p>
     <ul>
+      <li> Microsoft Word: </li>
       <li> Tableau: </li>
       <li> Google Sheets: </li>
     </ul>
@@ -95,8 +176,11 @@
 
     <h2> - Webs consultadas - </h2>
     <ul>
-      <li> https://www.mscbs.gob.es/profesionales/saludPublica/ccayes/alertasActual/nCov/documentos/ITCoronavirus.pdf#:~:text=Los%20coronavirus%20son%20una%20familia,los%20animales%20a%20loshumanos. </li>
-      <li>  </li>
+      <li>
+        https://www.mscbs.gob.es/profesionales/saludPublica/ccayes/alertasActual/nCov/documentos/ITCoronavirus.pdf#:~:text=Los%20coronavirus%20son%20una%20familia,los%20animales%20a%20loshumanos.
+      </li>
+      <li> https://www.vacunacovid.gob.es/ </li>
+      <li> https://elpais.com/sociedad/2021-03-10/los-datos-de-una-pandemia-en-tres-olas.html </li>
     </ul>
   </div>
 </body>
